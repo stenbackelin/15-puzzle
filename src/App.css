@@ -3,30 +3,45 @@
   --size: 100px;
 
   /* Color */
-  --primary: grey;
-  --secondary: black;
+  --white: 255, 255, 255;
+  --light-green: #d0ebea;
+  --dark-green: #244F49;
+  --primary: #52b2a3;
+  --secondary: orange;
+
+  /* Font-weight */
+  --normal: 400;
+  --bold: 700;
 }
 html, body {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;}
+  font-family: 'Open Sans', sans-serif;
+}
 .app {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--light-green);
 }
 .board {
   display: grid;
+  grid-gap: 10px;
   grid-template-columns: repeat(5, var(--size));
   grid-template-rows: repeat(3, var(--size));
-  border: 1px solid var(--primary);
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(var(--white), 0.4);
 }
 .tile {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  color: var(--dark-green);
+  border-radius: 10px;
   font-size: 2rem;
+  font-weight: var(--bold);
 }

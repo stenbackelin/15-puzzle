@@ -44,4 +44,9 @@ html, body {
   border-radius: 10px;
   font-size: 2rem;
   font-weight: var(--bold);
+  cursor: pointer;
+}
+.tile.disabled {
+  pointer-events: none;
+  background: transparent;
 }

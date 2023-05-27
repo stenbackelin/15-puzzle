@@ -6,7 +6,6 @@ function Board() {
         <div className="board">
             <Tile />
         </div>
-        <button className='shuffle-btn'>Slumpa</button>
         </>
     );
 }

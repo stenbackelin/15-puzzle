@@ -1,9 +1,12 @@
 :root {
   /* Size */
   --size: 100px;
+  --size-font: 2rem;
+  --size-font-btn: 1rem;
 
   /* Color */
   --white: 255, 255, 255;
+  --light-grey: #d3d3d3;
   --light-green: #d0ebea;
   --dark-green: #244F49;
   --dark--orange: #F29D00;
@@ -46,18 +49,20 @@ html, body {
   background-color: var(--primary);
   color: var(--dark-green);
   border-radius: 10px;
-  font-size: 2rem;
+  font-size: var(--size-font);
   font-weight: var(--bold);
   cursor: pointer;
+  box-shadow: 3px 3px 5px var(--light-grey);
 }
 .tile.disabled {
   pointer-events: none;
   background: transparent;
+  box-shadow: none;
 }
 .shuffle-btn {
   margin-top: 30px;
   padding: 10px 20px;
-  font-size: 1rem;
+  font-size: var(--size-font-btn);
   font-weight: var(--bold);
   border-radius: 40px;
   border: 3px solid rgba(var(--white), 0.8);
@@ -69,4 +74,31 @@ html, body {
 .shuffle-btn:hover {
   border: 3px solid rgba(var(--white), 0.9);
   background-color: var(--dark--orange);
+}
+@media only screen and (max-width: 800px) {
+  :root {
+    /* Size */
+    --size: 80px;
+    --size-font: 1.6rem;
+    --size-font-btn: 1.1rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .board {
+    grid-gap: 5px;
+  }
+}
+@media only screen and (max-width: 470px) {
+  :root {
+    /* Size */
+    --size: 70px;
+    --size-font: 1.3rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  :root {
+    /* Size */
+    --size: 60px;
+    --size-font-btn: 1rem;
+  }
 }

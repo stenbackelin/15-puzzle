@@ -1,10 +1,10 @@
 import { useState } from "react";
 import Button from "./Button";
+import Message from "./Message";
 
 function Tile() {
     const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].sort(shuffle); // Creating array and calling on function shuffle
     const number = numbers.map((x,i) => ({value : x, index : i})); // Mapping array to set value and index
-    if(number.every(n => n.value === n.index +1)) {alert('Grattis, du vann!')}; // If number value is same as index alert win
 
     // function returns shuffled array
     function shuffle() {
@@ -28,6 +28,7 @@ function Tile() {
 
     return (
         <>
+        <Message number={number} />
         <div className="board">
             {number.map((x,i) =>
                 <div 

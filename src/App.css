@@ -1,8 +1,9 @@
 :root {
   /* Size */
   --size: 100px;
-  --size-font: 2rem;
-  --size-font-btn: 1rem;
+  --font-size-m: 2rem;
+  --font-size: 1.5rem;
+  --font-size-s: 1rem;
 
   /* Color */
   --white: 255, 255, 255;
@@ -58,7 +59,7 @@ html, body {
   margin: 0;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: var(--font-size);
 }
 .board {
   display: grid;
@@ -76,7 +77,7 @@ html, body {
   background-color: var(--primary);
   color: var(--dark-green);
   border-radius: 10px;
-  font-size: var(--size-font);
+  font-size: var(--font-size-m);
   font-weight: var(--bold);
   cursor: pointer;
   box-shadow: 3px 3px 5px var(--light-grey);
@@ -89,7 +90,7 @@ html, body {
 .shuffle-btn {
   margin-top: 30px;
   padding: 10px 20px;
-  font-size: var(--size-font-btn);
+  font-size: var(--font-size-s);
   font-weight: var(--bold);
   border-radius: 40px;
   border: 3px solid rgba(var(--white), 0.8);
@@ -106,8 +107,8 @@ html, body {
   :root {
     /* Size */
     --size: 80px;
-    --size-font: 1.6rem;
-    --size-font-btn: 1.1rem;
+    --font-size-m: 1.6rem;
+    --font-size-s: 1.1rem;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -119,13 +120,14 @@ html, body {
   :root {
     /* Size */
     --size: 70px;
-    --size-font: 1.3rem;
+    --font-size-m: 1.3rem;
+    --font-size: 1.2rem;
   }
 }
 @media only screen and (max-width: 420px) {
   :root {
     /* Size */
     --size: 60px;
-    --size-font-btn: 1rem;
+    --font-size-s: 1rem;
   }
 }

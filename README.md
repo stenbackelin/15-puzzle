@@ -1,6 +1,6 @@
 # GAME SETTING
 
-# Change amount of tiles
+## Change amount of tiles
 To change the amount of tiles in the board:
 1. Change const 'numbers' in Board.js to ex [1, 2, 3, 4, 5, 6, 7, 8, 9]
 2. Change value '15' in Tiles.js to 9
@@ -8,7 +8,7 @@ To change the amount of tiles in the board:
 
 This will give you a game with 9 tiles with a 3x3 grid
 
-# Se functionality for when a user wins
+## Se functionality for when a user wins
 To see the message the user will get if the game is won, comment out '.sort(shuffle);' on row 7 in Board.js
 
 # REACT APP
